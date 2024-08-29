@@ -1,0 +1,19 @@
+[project]
+authors = ["Erik van Onselen <erik.vanonselen@deltares.nl>"]
+channels = ["conda-forge"]
+description = "Add a short description here"
+name = "sst-examples"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.12.*"
+jupyter = ">=1.0.0,<2"
+ipykernel = ">=6.29.5,<7"
+pip = ">=24.2,<25"
+scikit-learn = ">=1.5.1,<2"
+
+[pypi-dependencies]
+geost = ">=0.2.2, <0.3"
