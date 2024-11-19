@@ -10,11 +10,15 @@ version = "0.1.0"
 
 [dependencies]
 python = "3.12.*"
-jupyter = ">=1.0.0,<2"
-ipykernel = ">=6.29.5,<7"
-pip = ">=24.2,<25"
-scikit-learn = ">=1.5.1,<2"
-numpy = ">=2.1.0,<2.1.1"
+jupyter = "*"
+ipykernel = "*"
+pip = "*"
+scikit-learn = "*"
+numpy = "*"
+pandas = "*"
+xgboost = "*"
+seaborn = "*"
+shap = "*"
 
 [pypi-dependencies]
 geost = ">=0.2.4, <0.3"
