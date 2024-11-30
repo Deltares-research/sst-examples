@@ -1,0 +1,46 @@
+[project]
+name = "sst-examples"
+version = "0.1.0"
+maintainers = [
+    {name = "Erik van Onselen", email = "erik.vanonselen@deltares.nl"},
+    {name = "Roeland Nieboer", email = "roeland.nieboer@deltares.nl"},
+]
+description = "Examples uses of the Deltares subsurface toolbox"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.12"
+
+dependencies = [
+"geost",
+"deltaseis"
+]
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[tool.pixi.dependencies]
+jupyter = "*"
+ipykernel = "*"
+pip = "*"
+scikit-learn = "*"
+numpy = "*"
+pandas = "*"
+xgboost = "*"
+seaborn = "*"
+shap = "*"
+
+[tool.pixi.pypi-dependencies]
+sst_examples = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+thickness = "jupyter notebook ./predict_sand_thickness/predict_sand_thickness_simple.ipynb"
+seismic = "jupyter notebook ./offshore_seismic_edit/segy_editing.ipynb"
+
+
+
+
