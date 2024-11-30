@@ -7,6 +7,7 @@ platforms = ["win-64"]
 version = "0.1.0"
 
 [tasks]
+notebook = "jupyter notebook ./offshore_seismic_edit/segy_editing.ipynb"
 
 [dependencies]
 python = "3.12.*"
@@ -22,3 +23,4 @@ shap = "*"
 
 [pypi-dependencies]
 geost = ">=0.2.4, <0.3"
+deltaseis = ">=0.0.5, <0.2"
