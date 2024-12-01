@@ -4279,7 +4279,7 @@ packages:
   name: sst-examples
   version: 0.1.0
   path: .
-  sha256: 5fd2ab672c2a27a6e1cbed6aade03b7a269977c2d39d282cd0e5111f01574373
+  sha256: ebbb73c0f96bd9c720ffbb042b1595497a9c83536ab79f31b4023ba6d0fd94ea
   requires_dist:
   - geost
   - deltaseis
